@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoKart-India's No.1 Shopping Place</title>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">GoKart</div>
+        <input type="checkbox" id="toggle"/>
+        
+        <div id="hamburgerContainer">
+            <label for="toggle" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        
+      <div class="nav-links">
+           <div><a href="home.html">Home</a></div>
+           <div><a href="about.html">About</a></div>
+           <div><a href="contact.html">Contact</a></div>    
+       </div>
+        <div class="search-box">
+            <input type="text" id="searchProduct" placeholder="Serach....">
+            <div><i class="fa fa-search"></i></div>
+        </div>
+
+        <div class="cart">
+            <a href="../Cart/cart.html"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+    </nav>
+
+    <div id="productContainer" class="product-container"></div>
+
+<script src="./home.js" defer></script>
+</body>
+</html>

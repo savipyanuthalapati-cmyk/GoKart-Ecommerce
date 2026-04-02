@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(135deg, #dfe9f3, #ffffff);
+}
+#container{
+    width: 85%;
+    margin: 40px auto;
+}
+#box{
+    display: flex;
+    gap: 40px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+#box1{
+    width: 45%;
+    background: #f8f8f8;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#box1 img{
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    transition: 0.4s;
+}
+#box1 img:hover{
+    transform: scale(1.08);
+}
+#box2{
+    width: 55%;
+}
+#box2 h1{
+    font-size: 29px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 10px;
+}
+#box2 p{
+    margin: 8px 0;
+    color: #555;
+    font-size: 18px;
+    line-height: 1.5;
+}
+#box2 h3{
+    margin: 10px 0;
+    color: #333;
+}
+#box2 p:nth-of-type(3){
+    font-size: 24px;
+    font-weight: 500;
+    color: #2e7d32;
+}
+#box2 p:last-of-type{
+    color: #ff9800;
+    font-weight: 500;
+}
+.btn1, .btn2{
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.btn1{
+    background: #4caf50;
+    color: white;
+    margin-right: 10px;
+}
+.btn1:hover{
+    background: #388e3c;
+}
+.btn2{
+    background: #ff5722;
+    color: white;
+}
+
+.btn2:hover{
+    background: #e64a19;
+}
+
+/* ================= REVIEWS ================= */
+
+.reviews{
+    margin-top: 25px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.reviews h2{
+    margin-bottom: 15px;
+}
+.review-item{
+    background: #f9f9f9;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.highlight{
+    background: #e3f2fd;
+    border-left: 4px solid #2196f3;
+}
+@media(max-width:768px){
+    #box{
+        flex-direction: column;
+    }
+
+    #box1, #box2{
+        width: 100%;
+    }
+}
